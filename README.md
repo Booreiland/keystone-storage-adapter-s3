@@ -15,7 +15,8 @@ var storage = new keystone.Storage({
     key: 's3-key', // required; defaults to process.env.S3_KEY
     secret: 'secret', // required; defaults to process.env.S3_SECRET
     bucket: 'mybucket', // required; defaults to process.env.S3_BUCKET
-    region: 'ap-southeast-2', // optional; defaults to process.env.S3_REGION, or if that's not specified, us-east-1
+    endpoint: 'nyc3.digitaloceanspaces.com', // optional; defaults to process.env.S3_ENDPOINT
+    region: 'nyc3', // optional; defaults to process.env.S3_REGION, or if that's not specified, us-east-1
     path: '/profilepics', // optional; defaults to "/"
     publicUrl: "https://xxxxxx.cloudfront.net", // optional; sets a custom domain for public urls - see below for details
     uploadParams: { // optional; add S3 upload params; see below for details
