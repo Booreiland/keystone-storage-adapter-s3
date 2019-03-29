@@ -2,3 +2,5 @@ node_modules
 .*.swp
 .env
 npm-debug.log
+*.sublime-project
+*.sublime-workspace
