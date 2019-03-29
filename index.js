@@ -14,6 +14,7 @@ var nameFunctions = require('keystone-storage-namefunctions');
 var S3 = require('aws-sdk/clients/s3');
 
 var DEFAULT_OPTIONS = {
+	endpoint: process.env.S3_ENDPOINT,
 	key: process.env.S3_KEY,
 	secret: process.env.S3_SECRET,
 	bucket: process.env.S3_BUCKET,
@@ -75,6 +76,7 @@ function S3Adapter (options, schema) {
 
 	// Create the s3 client
 	this.s3Client = new S3({
+		endpoint: this.options.endpoint,
 		accessKeyId: this.options.key,
 		secretAccessKey: this.options.secret,
 		region: this.options.region,
