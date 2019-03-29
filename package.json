@@ -1,18 +1,20 @@
 {
-  "name": "keystone-storage-adapter-s3",
+  "name": "@booreiland/keystone-storage-adapter-s3",
   "version": "2.0.0",
-  "description": "S3 storage adapter for keystonejs",
+  "author": "Booreiland",
+  "description": "S3 storage adapter for keystonejs with DO Spaces support",
   "main": "index.js",
   "contributors": [
     "Joseph Gentle <me@josephg.com>",
     "Mike Hazell <mike@thinkmill.com.au>",
-    "Jed Watson <jed@keystonejs.com>"
+    "Jed Watson <jed@keystonejs.com>",
+    "Toine Kamps <toine@booreiland.amsterdam>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/keystonejs/keystone-storage-adapter-s3/issues"
+    "url": "https://github.com/booreiland/keystone-storage-adapter-s3/issues"
   },
-  "homepage": "https://github.com/keystonejs/keystone-storage-adapter-s3",
+  "homepage": "https://github.com/booreiland/keystone-storage-adapter-s3",
   "dependencies": {
     "aws-sdk": "^2.151.0",
     "debug": "^2.2.0",
@@ -32,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keystonejs/keystone-storage-adapter-s3.git"
+    "url": "git+https://github.com/booreiland/keystone-storage-adapter-s3.git"
   },
   "keywords": [
     "aws",
@@ -41,5 +43,8 @@
     "keystonejs",
     "s3",
     "storage"
-  ]
+  ],
+  "directories": {
+    "test": "test"
+  }
 }
